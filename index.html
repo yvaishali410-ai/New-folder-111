@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishali Yadav | My Princess World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>👑 Vaishali Yadav ♡</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#mall">Mall</a>
+            <a href="#hostel">Hostel</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="profile">
+            <h2>Vaishali Yadav ♡</h2>
+            <p>Dream Big | Work Hard | Stay Cute ✨</p>
+        </div>
+
+        <div class="welcome">
+            <h2>Welcome To My World 💗</h2>
+            <p>Explore My Beautiful Little World!</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+        <h2>🌸 About Me</h2>
+        <p>
+            Hi! I am Vaishali Yadav.
+            I am a BCA AI/ML student at REVA University.
+            I love technology, shopping, travelling and cute things.
+            My dream is to become a successful AI Engineer
+            and work at Google. 🚀
+        </p>
+    </section>
+
+    <!-- Hostel and Mall -->
+    <section class="section">
+        <h2>My Lifestyle 💕</h2>
+
+        <div class="cards">
+
+            <div class="card" id="hostel">
+                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600"
+                     alt="Hostel">
+                <h3>🏡 Hostel Life</h3>
+                <p>My home away from home!</p>
+                <button onclick="showMessage('Hostel life is full of memories! 💗')">
+                    Explore
+                </button>
+            </div>
+
+            <div class="card" id="mall">
+                <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=600"
+                     alt="Shopping mall">
+                <h3>🛍️ Mall & Shopping</h3>
+                <p>Shopping is my happy place!</p>
+                <button onclick="showMessage('Shopping makes me happy! 🛍️')">
+                    Explore
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
+                     alt="Fashion store">
+                <h3>👗 Fashion</h3>
+                <p>Fashion and beautiful outfits.</p>
+                <button onclick="showMessage('Stay stylish and confident! ✨')">
+                    Explore
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Food Category -->
+    <section class="section">
+        <h2>🍕 My Favourite Food</h2>
+        <ol class="food">
+            <li>Pizza 🍕</li>
+            <li>Burger 🍔</li>
+            <li>Pasta 🍝</li>
+            <li>Ice Cream 🍦</li>
+            <li>Chocolate 🍫</li>
+        </ol>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+        <h2>📸 Cute Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500" alt="Flowers">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500" alt="Fashion">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500" alt="Portrait">
+        </div>
+    </section>
+
+    <!-- Favourite Colours -->
+    <section class="section">
+        <h2>🌈 My Favourite Colours</h2>
+        <ul class="colours">
+            <li>💗 Pink</li>
+            <li>💚 Green</li>
+            <li>💜 Purple</li>
+            <li>💛 Yellow</li>
+        </ul>
+    </section>
+
+    <!-- Student Details -->
+    <section class="section">
+        <h2>🎓 Student Details</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>University</th>
+            </tr>
+            <tr>
+                <td>Vaishali</td>
+                <td>BCA AI/ML</td>
+                <td>REVA</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" id="contact">
+        <h2>💌 Contact Me</h2>
+
+        <form onsubmit="sendMessage(event)">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Your Message</label>
+            <textarea placeholder="Write something..." required></textarea>
+
+            <button type="submit">Send Message 💗</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Made With Love ♡</h2>
+        <p>© 2026 Vaishali Yadav | My Princess World</p>
+        <p>Keep Dreaming, Keep Shining! 👑</p>
+    </footer>
+
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+
+        function sendMessage(event) {
+            event.preventDefault();
+            alert("Thank you for visiting my website! 💗");
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>

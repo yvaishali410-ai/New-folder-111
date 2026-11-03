@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff0f7, #f3e5ff);
+    color: #54204f;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ffaddb, #e7baff);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 15px #e9a5d5;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    color: #8b176b;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #64104f;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: #ff62b5;
+    color: white;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #ff91cc;
+    box-shadow: 0 5px 20px #e8a5d4;
+}
+
+.profile h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 15px;
+    color: #a72b7b;
+}
+
+.welcome {
+    text-align: center;
+    background: linear-gradient(135deg, #ffb7dd, #dcbaff);
+    padding: 60px 35px;
+    border-radius: 25px;
+    max-width: 550px;
+    box-shadow: 0 8px 20px #e6a4d3;
+}
+
+.welcome h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e83e9b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+/* Sections */
+.section {
+    background: #fffaff;
+    margin: 30px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 22px;
+    box-shadow: 0 5px 15px #e9c2e3;
+}
+
+.section h2 {
+    text-align: center;
+    color: #c12b89;
+    margin-bottom: 25px;
+}
+
+.section p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #ffe4f2;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px #e8a4cf;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+button {
+    border: none;
+    background: #e83e9b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover, .btn:hover {
+    background: #a92779;
+}
+
+/* Lists */
+.food, .colours {
+    padding-left: 35px;
+    line-height: 2.2;
+    font-size: 18px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #ffb1dc;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid #e88ac4;
+    padding: 14px;
+}
+
+th {
+    background: #ffc7e7;
+}
+
+/* Contact */
+form {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 13px;
+    border: 2px solid #e8a0cd;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    background: #fff5fb;
+}
+
+input:focus, textarea:focus {
+    border-color: #d52d91;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #ffaddb, #d9adff);
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+    color: #65104f;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .welcome h2 {
+        font-size: 26px;
+    }
+
+    .hero {
+        gap: 25px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
